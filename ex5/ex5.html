@@ -1,11 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, initial-scañe=1.0">
-    <title>Exercici 5</title>
-</head>
-<body>
-    <h1>EXERCICI 5</h1>
-</body>
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <a-scene cursor="rayOrigin: mouse">
+        <a-assets>
+          <img id="fons" src="assets/salita.jpg" />
+          <img id="texturaterra" src="assets/xdd.jpg" />
+          <img id="guernica" src="assets/esencia.jpg" />        
+          <img id="cara" src="assets/cell.jpg" />            
+          <img id="bicicletes" src="assets/cego.png" />
+          <img id="cilin" src="assets/moai.jpg" />
+          <img id="esfer" src="assets/esfer.png" />
+
+      
+        </a-assets>
+        <a-sky src="#fons"></a-sky>
+        <a-sphere id="esmou3"src="#esfer" position="100 10 100" radius="4"></a-sphere>
+        <a-sphere id="esmou4"src="#esfer" position="-100 10 -100" radius="4"></a-sphere>
+        <a-sphere id="esmou5"src="#esfer" position="100 10 -100" radius="4"></a-sphere>
+        <a-sphere id="esmou6"src="#esfer" position="-100 10 100" radius="4"></a-sphere>
+
+        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
+        <a-plane position="221 50 1" rotation="0 270 0" width="100" height="100"  src="#guernica" animation="property: position; to: 50 50 0; dur: 1000; dir: alternate; loop: true"></a-plane>
+        <a-box id="esmou" position="-4 2 0" rotation="360 0 0"  src="#cara" depth="1" height="1" width="1"></a-box>
+        <a-dodecahedron position="8 2 -6" rotation="0 0 0" radius="3" src="#bicicletes" animation="property: rotation; to: 0 360 0; dur: 3000; loop: true"></a-dodecahedron>
+        <a-cylinder id="esmou2" src="#cilin" radius="1" height="10" position="10 5 10"></a-cylinder>
+
+        <a-entity gltf-model="assets/shen.glb" position="-221.9176 3.67759 1.41074" rotation="0 125.25487655134441 0" scale="0.5 0.5 0.5"></a-entity>
+
+      </a-scene> 
+      
+        <script>
+          let unobjecte = document.querySelector("#esmou");
+          unobjecte.addEventListener("click", () => {            
+            unobjecte.setAttribute("animation", {
+              property: "position",
+              to: "16 0 -6",
+              dur: 10000,
+              loop: true
+            });
+          });
+
+
+          let unobjecte2 = document.querySelector("#esmou2");
+          unobjecte2.addEventListener("mouseenter", () => {            
+            unobjecte2.setAttribute("animation", {
+              property: "rotation",
+              to: "180 45 360",
+              dur: 1000,
+              loop: true
+            });
+          });
+
+          let unobjecte3 = document.querySelector("#esmou3");
+          unobjecte3.addEventListener("click", () => {            
+            unobjecte3.setAttribute("animation", {
+              property: "radius",
+              to: "100",
+              dur: 1000,
+              dir: "alternate",
+              loop: true
+            });
+          });
+          let unobjecte4 = document.querySelector("#esmou4");
+          unobjecte4.addEventListener("click", () => {            
+            unobjecte4.setAttribute("animation", {
+              property: "radius",
+              to: "100",
+              dur: 1000,
+              dir: "alternate",
+              loop: true
+            });
+          });
+          let unobjecte5 = document.querySelector("#esmou5");
+          unobjecte5.addEventListener("click", () => {            
+            unobjecte5.setAttribute("animation", {
+              property: "radius",
+              to: "100",
+              dur: 1000,
+              dir: "alternate",
+              loop: true
+            });
+          });
+          let unobjecte6 = document.querySelector("#esmou6");
+          unobjecte6.addEventListener("click", () => {            
+            unobjecte6.setAttribute("animation", {
+              property: "radius",
+              to: "100",
+              dur: 1000,
+              dir: "alternate",
+              loop: true
+            });
+          });
+
+        </script>  
+
+  </body>
 </html>
