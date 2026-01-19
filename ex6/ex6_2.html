@@ -18,9 +18,9 @@
     <a-assets>
       <img id="imgportal" src="assets/portal.jpg" >
       <img id="imgSortida" src="assets/entragroc.png" >
-      <img id="imgFantasma" src="assets/blue.jpg" >
-      <img id="imgCasa" src="assets/labo.jpg" >
-      <a-asset-item id="scientist" src="assets/science/scene.gltf"></a-asset-item>
+      <img id="imgFantasma" src="assets/red.jpg" >
+      <img id="imgCasa" src="assets/reves.jpg" >
+      <a-asset-item id="dracula" src="assets/demo/scene.gltf"></a-asset-item>
     </a-assets>
    
     <a-entity camera look-controls wasd-controls="false">
@@ -44,11 +44,14 @@
                 animation="property: rotation; dur: 10000;
                        to: 0 360 0; loop: true">          
        </a-sphere>
-      <a-entity gltf-model="assets/science/scene.gltf" position="1.91553 -3.20196 -5" scale="0.08053 0.08053 0.08053" rotation="0 -29.030625563688552 0" 
-                animation="property: position; dur: 2000; from: 0 -3.5 -5; to: 0 -3 -5; dir: alternate; loop: true" 
-                mylink="href: ex6_2.html">         
+      <a-entity gltf-model="assets/demo/scene.gltf" position="0 -3.19443 -61.18176" scale="2.93334 2.93334 2.93334" rotation="0 -2.6843072701879076 0" 
+                animation="property: position; dur: 2000; from: 0 3.19443 -61.18176; to: 0 -3.12526 -5.85248; dur: 2500;loop: NaN"
+                mylink="href: ex6.html">        
       </a-entity>
       <a-plane position="-1.5 0 1" src="#imgportal" rotation="0 150 0"  transparent="true"></a-plane>
-      <a-plane position="-1.5 0 0.9" src="#imgSortida" rotation="0 150 0"  width="0.5" height="0.5" transparent="true" mylink="href: index.html"></a-plane>    </a-scene>
+      <a-plane position="-1.5 0 0.9" src="#imgSortida" rotation="0 150 0"  width="0.5" height="0.5" transparent="true" mylink="href: index.html"></a-plane>
+
+    </a-scene>
   </body>
 </html>
+
