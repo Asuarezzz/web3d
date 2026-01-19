@@ -1,0 +1,11 @@
+Model Information:
+* title:	Demogorgon2
+* source:	https://sketchfab.com/3d-models/demogorgon2-0feb17b5c09c409ca593cdeaf06712c7
+* author:	3D-BRO (https://sketchfab.com/gamestudio657)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Demogorgon2" (https://sketchfab.com/3d-models/demogorgon2-0feb17b5c09c409ca593cdeaf06712c7) by 3D-BRO (https://sketchfab.com/gamestudio657) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
